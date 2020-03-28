@@ -1,0 +1,1348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.1.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="SO-8">
+<description>SO-8 package for power MOSFET</description>
+<smd name="1" x="-2.5" y="1.905" dx="1.505" dy="0.802" layer="1"/>
+<smd name="2" x="-2.5" y="0.635" dx="1.505" dy="0.802" layer="1"/>
+<smd name="3" x="-2.5" y="-0.635" dx="1.505" dy="0.802" layer="1"/>
+<smd name="4" x="-2.5" y="-1.905" dx="1.505" dy="0.802" layer="1"/>
+<smd name="5" x="2.5" y="-1.905" dx="1.505" dy="0.802" layer="1"/>
+<smd name="6" x="2.5" y="-0.635" dx="1.505" dy="0.802" layer="1"/>
+<smd name="7" x="2.5" y="0.635" dx="1.505" dy="0.802" layer="1"/>
+<smd name="8" x="2.5" y="1.905" dx="1.505" dy="0.802" layer="1"/>
+<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.3048" layer="48" curve="90"/>
+<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.3048" layer="48" curve="90"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.3048" layer="48"/>
+<wire x1="1.905" y1="2.54" x2="1.905" y2="-2.54" width="0.3048" layer="48"/>
+<wire x1="1.905" y1="-2.54" x2="-1.905" y2="-2.54" width="0.3048" layer="48"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="2.54" width="0.3048" layer="48"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.3048" layer="48"/>
+<text x="1.27" y="1.905" size="0.4064" layer="25" rot="SR270">&gt;NAME</text>
+<text x="-1.905" y="3.175" size="0.6096" layer="27">&gt;VALUE</text>
+<circle x="-1.27" y="1.905" radius="0.3175" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.3048" layer="21" curve="90"/>
+<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.3048" layer="21" curve="90"/>
+<wire x1="-0.635" y1="2.54" x2="-1.905" y2="2.54" width="0.3048" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="-2.54" width="0.3048" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.3048" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="1.905" y2="2.54" width="0.3048" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="0.635" y2="2.54" width="0.3048" layer="21"/>
+</package>
+<package name="SOT-23-6">
+<description>SOT-23-6</description>
+<smd name="1" x="-1.4" y="0.95" dx="1.1" dy="0.6" layer="1"/>
+<smd name="2" x="-1.4" y="0" dx="1.1" dy="0.6" layer="1"/>
+<smd name="3" x="-1.4" y="-0.95" dx="1.1" dy="0.6" layer="1"/>
+<smd name="4" x="1.4" y="-0.95" dx="1.1" dy="0.6" layer="1"/>
+<smd name="5" x="1.4" y="0" dx="1.1" dy="0.6" layer="1"/>
+<smd name="6" x="1.4" y="0.95" dx="1.1" dy="0.6" layer="1"/>
+<circle x="-1.27" y="0.9525" radius="0.15875" width="0.127" layer="21"/>
+<wire x1="-0.79375" y1="1.27" x2="-0.79375" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.79375" y1="-1.27" x2="0.79375" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.79375" y1="-1.27" x2="0.79375" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.79375" y1="1.27" x2="0.3175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="1.27" x2="0" y2="0.9525" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="0.9525" x2="-0.3175" y2="1.27" width="0.127" layer="21" curve="-90"/>
+<wire x1="-0.3175" y1="1.27" x2="-0.79375" y2="1.27" width="0.127" layer="21"/>
+<text x="-0.47625" y="-1.11125" size="0.254" layer="25" rot="R270" align="center-right">&gt;NAME</text>
+<text x="0.47625" y="-1.11125" size="0.254" layer="27" rot="R90" align="center-left">&gt;VALUE</text>
+</package>
+<package name="TDFN-8-EP">
+<description>8-Lead Plastic Dual Flat, No Lead Package (MNY) – 2x3x0.8 mm Body [TDFN]</description>
+<smd name="1" x="-1.45" y="0.75" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="2" x="-1.45" y="0.25" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="3" x="-1.45" y="-0.25" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="4" x="-1.45" y="-0.75" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="5" x="1.45" y="-0.75" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="6" x="1.45" y="-0.25" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="7" x="1.45" y="0.25" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="8" x="1.45" y="0.75" dx="0.85" dy="0.25" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="1.6" dy="1.5" layer="1" rot="R270"/>
+<wire x1="-2" y1="1.1" x2="2" y2="1.1" width="0.127" layer="21"/>
+<wire x1="2" y1="1.1" x2="2" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.1" x2="-2" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.1" x2="-2" y2="1.1" width="0.127" layer="21"/>
+<circle x="-2.3" y="0.9" radius="0.1" width="0.127" layer="21"/>
+<text x="-1.905" y="1.27" size="0.3048" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="-1.27" size="0.3048" layer="25" align="top-left">&gt;NAME</text>
+</package>
+<package name="SOIC-8">
+<description>8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC]</description>
+<smd name="1" x="-2.7" y="1.905" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<smd name="2" x="-2.7" y="0.635" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<smd name="3" x="-2.7" y="-0.635" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<smd name="4" x="-2.7" y="-1.905" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<smd name="5" x="2.7" y="-1.905" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<smd name="6" x="2.7" y="-0.635" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<smd name="7" x="2.7" y="0.635" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<smd name="8" x="2.7" y="1.905" dx="1.55" dy="0.6" layer="1" roundness="5"/>
+<wire x1="-1.75" y1="2.25" x2="-1.75" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-2.25" x2="1.75" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-2.25" x2="1.75" y2="2.25" width="0.127" layer="21"/>
+<wire x1="1.75" y1="2.25" x2="0.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="0.5" y1="2.25" x2="0" y2="1.75" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="1.75" x2="-0.5" y2="2.25" width="0.127" layer="21" curve="-90"/>
+<wire x1="-0.5" y1="2.25" x2="-1.75" y2="2.25" width="0.127" layer="21"/>
+<circle x="-2.4" y="1.9" radius="0.1" width="0.127" layer="21"/>
+<text x="-1.905" y="-2.54" size="0.6096" layer="25" align="top-left">&gt;NAME</text>
+<text x="-1.905" y="3.175" size="0.6096" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+<package name="MSOP-8">
+<description>8-Lead Plastic Micro Small Outline Package (MS) [MSOP]</description>
+<smd name="1" x="-2.2" y="0.975" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<smd name="2" x="-2.2" y="0.325" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<smd name="3" x="-2.2" y="-0.325" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<smd name="4" x="-2.2" y="-0.975" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<smd name="5" x="2.2" y="-0.975" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<smd name="6" x="2.2" y="-0.325" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<smd name="7" x="2.2" y="0.325" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<smd name="8" x="2.2" y="0.975" dx="1.45" dy="0.45" layer="1" roundness="5"/>
+<wire x1="-1.4" y1="1.2" x2="-1.4" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1" x2="-1.4" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-1.3" x2="1.4" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-1.3" x2="1.4" y2="1.3" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.3" x2="-0.7" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="1.3" x2="-0.8" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="1.3" x2="-1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="1.3" x2="-1.2" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.3" x2="-1.4" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.3" x2="-1.4" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.2" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.3" x2="-1.2" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="1.3" x2="-1.4" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.1" x2="-1.4" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1" x2="-1.1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="1.3" x2="-1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.3" x2="-1.4" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.9" x2="-1.4" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="-0.9" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="1.3" x2="-0.8" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="1.3" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.6" x2="-0.7" y2="1.3" width="0.127" layer="21"/>
+<circle x="-2" y="1" radius="0.1" width="0.127" layer="21"/>
+<text x="-1.4" y="-1.7" size="0.3048" layer="25">&gt;NAME</text>
+<text x="-1.4" y="1.7" size="0.3048" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+<package name="PLATED_SLOT">
+<description>Motor Pad / Plated Slot</description>
+<smd name="P$1" x="0" y="0" dx="2" dy="3" layer="1" rot="R180"/>
+<smd name="P$2" x="0" y="0" dx="2" dy="3" layer="16" rot="R180"/>
+<wire x1="0" y1="0.75" x2="0" y2="-0.75" width="1" layer="46"/>
+</package>
+<package name="POWERPAK-1212-8">
+<description>&lt;b&gt;PowerPak 1212-8&lt;/b&gt; from Vishay&lt;br&gt;
+Detailed taken from package Application Note AN826</description>
+<smd name="1" x="-1.435" y="0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="2" x="-1.435" y="0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="3" x="-1.435" y="-0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="4" x="-1.435" y="-0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="5" x="1.435" y="-0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="6" x="1.435" y="-0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="7" x="1.435" y="0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="8" x="1.435" y="0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="EP" x="0.5575" y="0" dx="1.725" dy="2.235" layer="1"/>
+<circle x="-1.4" y="1" radius="0.1" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="1.4" x2="-0.7" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="1.4" x2="-0.5" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1.4" x2="1.9" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-1.4" x2="-0.7" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-1.4" x2="-0.6" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.4" x2="1.9" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-1.4" x2="-0.7" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="1.4" x2="-0.6" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="1.4" x2="-0.6" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-1.4" x2="-0.5" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.4" x2="-0.5" y2="1.4" width="0.127" layer="21"/>
+<text x="-1.9" y="1.5" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.9" y="-1.9" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="DFN6-3X3">
+<description>&lt;b&gt;DFN-6 3mm x 3mm&lt;/b&gt;&lt;br&gt;
+ST Voltage Regulator Package</description>
+<smd name="1" x="-1.3" y="0.95" dx="0.5" dy="0.3" layer="1"/>
+<smd name="2" x="-1.3" y="0" dx="0.5" dy="0.3" layer="1"/>
+<smd name="3" x="-1.3" y="-0.95" dx="0.5" dy="0.3" layer="1"/>
+<smd name="4" x="1.3" y="-0.95" dx="0.5" dy="0.3" layer="1"/>
+<smd name="5" x="1.3" y="0" dx="0.5" dy="0.3" layer="1"/>
+<smd name="6" x="1.3" y="0.95" dx="0.5" dy="0.3" layer="1"/>
+<smd name="EP" x="0" y="0" dx="2.5" dy="1.68" layer="1" rot="R90"/>
+<circle x="-1.2" y="0.95" radius="0.1" width="0.05" layer="21"/>
+<wire x1="-1.7" y1="1.4" x2="-0.9" y2="1.4" width="0.1" layer="21"/>
+<wire x1="-0.9" y1="1.4" x2="1.7" y2="1.4" width="0.1" layer="21"/>
+<wire x1="1.7" y1="1.4" x2="1.7" y2="-1.4" width="0.1" layer="21"/>
+<wire x1="1.7" y1="-1.4" x2="-1.7" y2="-1.4" width="0.1" layer="21"/>
+<wire x1="-1.7" y1="-1.4" x2="-1.7" y2="1.3" width="0.1" layer="21"/>
+<wire x1="-1.7" y1="1.3" x2="-1.7" y2="1.4" width="0.1" layer="21"/>
+<wire x1="-1.7" y1="1.3" x2="-1" y2="1.3" width="0.1" layer="21"/>
+<wire x1="-1" y1="1.3" x2="-0.9" y2="1.4" width="0.1" layer="21"/>
+<text x="-1.7" y="1.5" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.7" y="-1.5" size="0.4064" layer="27" align="top-left">&gt;VALUE</text>
+</package>
+<package name="SOD-323">
+<description>Small Outline Diode 323</description>
+<smd name="A" x="0" y="0.995" dx="0.71" dy="0.403" layer="1" rot="R90"/>
+<smd name="K" x="0" y="-0.995" dx="0.71" dy="0.403" layer="1" rot="R90"/>
+<wire x1="0.625" y1="0.85" x2="0.625" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.625" y1="-0.3" x2="0.625" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.625" y1="-0.4" x2="0.625" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-0.85" x2="-0.625" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-0.4" x2="-0.625" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-0.3" x2="-0.625" y2="0.85" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="0.85" x2="-0.4" y2="0.85" width="0.127" layer="21"/>
+<wire x1="0.625" y1="0.85" x2="0.4" y2="0.85" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-0.85" x2="-0.4" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.85" x2="0.625" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-0.4" x2="0.625" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.625" y1="-0.3" x2="0.625" y2="-0.3" width="0.127" layer="21"/>
+<text x="-0.7" y="-0.9" size="0.3048" layer="25" rot="R90">&gt;NAME</text>
+<text x="0.7" y="-0.9" size="0.3048" layer="27" rot="R90" align="top-left">&gt;VALUE</text>
+</package>
+<package name="SOT-723-3">
+<description>SOT-723-3 Transistor Package</description>
+<smd name="1" x="-0.4" y="-0.49" dx="0.27" dy="0.52" layer="1" rot="R180"/>
+<smd name="2" x="0.4" y="-0.49" dx="0.27" dy="0.52" layer="1" rot="R180"/>
+<smd name="3" x="0" y="0.49" dx="0.36" dy="0.52" layer="1" rot="R180"/>
+<wire x1="-0.65" y1="-0.5" x2="-0.65" y2="0.5" width="0.1" layer="21"/>
+<wire x1="-0.65" y1="0.5" x2="-0.3" y2="0.5" width="0.1" layer="21"/>
+<wire x1="0.3" y1="0.5" x2="0.65" y2="0.5" width="0.1" layer="21"/>
+<wire x1="0.65" y1="0.5" x2="0.65" y2="-0.5" width="0.1" layer="21"/>
+<wire x1="-0.2" y1="-0.5" x2="0.2" y2="-0.5" width="0.1" layer="21"/>
+<text x="-0.8" y="-0.9" size="0.3048" layer="25" rot="R90">&gt;NAME</text>
+<text x="0.8" y="-0.9" size="0.3048" layer="27" rot="R90" align="top-left">&gt;VALUE</text>
+</package>
+<package name="VDFN-8-EP">
+<description>8-Lead Very Thin Plastic Dual Flat, No Lead Package (Q8B)</description>
+<smd name="1" x="-1.5" y="0.975" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="2" x="-1.5" y="0.325" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="3" x="-1.5" y="-0.325" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="4" x="-1.5" y="-0.975" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="5" x="1.5" y="-0.975" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="6" x="1.5" y="-0.325" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="7" x="1.5" y="0.325" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="8" x="1.5" y="0.975" dx="0.8" dy="0.35" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="2.5" dy="1.7" layer="1" rot="R90"/>
+<wire x1="-2" y1="-1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<text x="-1.9" y="1.6" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.9" y="-1.6" size="0.6096" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-2.3" y="1" radius="0.14141875" width="0.127" layer="21"/>
+</package>
+<package name="QFN-28">
+<description>28-Lead Plastic Quad Flat, No Lead Package (ML) - 6 X 6 mm Body [QFN]</description>
+<smd name="1" x="-2.85" y="1.95" dx="1" dy="0.37" layer="1"/>
+<smd name="2" x="-2.85" y="1.3" dx="1" dy="0.37" layer="1"/>
+<smd name="3" x="-2.85" y="0.65" dx="1" dy="0.37" layer="1"/>
+<smd name="4" x="-2.85" y="0" dx="1" dy="0.37" layer="1"/>
+<smd name="5" x="-2.85" y="-0.65" dx="1" dy="0.37" layer="1"/>
+<smd name="6" x="-2.85" y="-1.3" dx="1" dy="0.37" layer="1"/>
+<smd name="7" x="-2.85" y="-1.95" dx="1" dy="0.37" layer="1"/>
+<smd name="8" x="-1.95" y="-2.85" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="9" x="-1.3" y="-2.85" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="10" x="-0.65" y="-2.85" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="11" x="0" y="-2.85" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="12" x="0.65" y="-2.85" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="13" x="1.3" y="-2.85" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="14" x="1.95" y="-2.85" dx="1" dy="0.37" layer="1" rot="R90"/>
+<smd name="15" x="2.85" y="-1.95" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="16" x="2.85" y="-1.3" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="17" x="2.85" y="-0.65" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="18" x="2.85" y="0" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="19" x="2.85" y="0.65" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="20" x="2.85" y="1.3" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="21" x="2.85" y="1.95" dx="1" dy="0.37" layer="1" rot="R180"/>
+<smd name="22" x="1.95" y="2.85" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="23" x="1.3" y="2.85" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="24" x="0.65" y="2.85" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="25" x="0" y="2.85" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="26" x="-0.65" y="2.85" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="27" x="-1.3" y="2.85" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="28" x="-1.95" y="2.85" dx="1" dy="0.37" layer="1" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="4.25" dy="4.25" layer="1"/>
+<wire x1="-2.25" y1="3" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="2.25" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.25" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="3" y1="-3" x2="2.25" y2="-3" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="-3" x2="-3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="-2.25" width="0.127" layer="21"/>
+<circle x="-3" y="1.95" radius="0.1" width="0.127" layer="21"/>
+</package>
+<package name="PICOBLADE-5">
+<description>Molex PICO-Blade 5-Pin&lt;br&gt;
+1.25mm Pitch</description>
+<pad name="5" x="0" y="-2.5" drill="0.5" diameter="0.8128"/>
+<pad name="2" x="0" y="1.25" drill="0.5" diameter="0.8128"/>
+<pad name="3" x="0" y="0" drill="0.5" diameter="0.8128"/>
+<pad name="4" x="0" y="-1.25" drill="0.5" diameter="0.8128"/>
+<pad name="1" x="0" y="2.5" drill="0.5" diameter="0.8128" shape="square"/>
+<wire x1="-1.15" y1="4" x2="-1.15" y2="-4" width="0.127" layer="21"/>
+<wire x1="-1.15" y1="-4" x2="2.05" y2="-4" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-4" x2="2.05" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-2.5" x2="2.05" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.05" y1="2.5" x2="2.05" y2="4" width="0.127" layer="21"/>
+<wire x1="2.05" y1="4" x2="-1.15" y2="4" width="0.127" layer="21"/>
+<wire x1="2.05" y1="2.5" x2="1.25" y2="2.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="2.5" x2="1.25" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-2.5" x2="2.05" y2="-2.5" width="0.127" layer="21"/>
+<text x="-1.27" y="5.08" size="0.8128" layer="25" align="top-left">&gt;NAME</text>
+<text x="-1.27" y="-5.08" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+<package name="PICOBLADE-4">
+<description>PICOBLADE 4 Pin Connector &lt;br&gt;
+1.25mm pitch</description>
+<pad name="1" x="0" y="1.875" drill="0.5" diameter="0.8128" shape="square"/>
+<pad name="2" x="0" y="0.625" drill="0.5" diameter="0.8128"/>
+<pad name="3" x="0" y="-0.625" drill="0.5" diameter="0.8128"/>
+<pad name="4" x="0" y="-1.875" drill="0.5" diameter="0.8128"/>
+<wire x1="-1.15" y1="3.375" x2="-1.15" y2="-3.375" width="0.127" layer="21"/>
+<wire x1="-1.15" y1="-3.375" x2="2.05" y2="-3.375" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-3.375" x2="2.05" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-2.54" x2="2.05" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.05" y1="2.54" x2="2.05" y2="3.375" width="0.127" layer="21"/>
+<wire x1="2.05" y1="3.375" x2="-1.15" y2="3.375" width="0.127" layer="21"/>
+<wire x1="2.05" y1="2.54" x2="1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-2.54" x2="2.05" y2="-2.54" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="P-CHANNEL">
+<description>The P-channel MOSFET of a dual MOSFET package</description>
+<pin name="G" x="-5.08" y="-2.54" visible="pad" length="short"/>
+<pin name="D" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
+<wire x1="-1.905" y1="3.175" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.175" x2="-2.54" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="0"/>
+<vertex x="-1.27" y="-0.635"/>
+<vertex x="-1.27" y="0.635"/>
+</polygon>
+<wire x1="-1.905" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="3.175" y2="0.635" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="0.635"/>
+<vertex x="1.905" y="-0.635"/>
+<vertex x="3.175" y="-0.635"/>
+</polygon>
+<pin name="D@1" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<text x="-3.81" y="-1.27" size="0.8128" layer="96" rot="R90">&gt;VALUE</text>
+<text x="1.905" y="4.445" size="0.8128" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="N-CHANNEL">
+<description>N-Channel MOSFET of Dual MOSFET Package</description>
+<pin name="G" x="-5.08" y="-2.54" visible="pad" length="short"/>
+<pin name="D" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
+<pin name="D@1" x="2.54" y="5.08" visible="pad" length="short" rot="R270"/>
+<pin name="S" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<wire x1="-2.54" y1="3.175" x2="-2.54" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.905" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.905" y="-0.635"/>
+<vertex x="3.175" y="-0.635"/>
+<vertex x="2.54" y="0.635"/>
+</polygon>
+<wire x1="1.905" y1="0.635" x2="3.175" y2="0.635" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.905" y="0"/>
+<vertex x="-0.635" y="-0.635"/>
+<vertex x="-0.635" y="0.635"/>
+</polygon>
+<text x="1.905" y="-4.445" size="0.8128" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-1.27" size="0.8128" layer="96" rot="R90">&gt;VALUE</text>
+</symbol>
+<symbol name="MCP6C02">
+<description>MCP6C02 Current Sense Amplifier</description>
+<pin name="VIP" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="VIM" x="10.16" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="VDD" x="10.16" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="OUT" x="-10.16" y="0" length="short" direction="out"/>
+<pin name="VSS" x="-10.16" y="-5.08" length="short" direction="pwr"/>
+<pin name="REF" x="10.16" y="-5.08" length="short" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.4224" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-7.62" y="-10.16" size="1.4224" layer="96">&gt;NAME</text>
+</symbol>
+<symbol name="MCP14A0454">
+<description>4.5A Dual MOSFET Driver 
+with Low Threshold Input and Enable</description>
+<pin name="IN_A" x="-12.7" y="7.62" length="short" direction="in"/>
+<pin name="EN_A" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="OUT_A" x="12.7" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="IN_B" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="EN_B" x="-12.7" y="-7.62" length="short" direction="in"/>
+<pin name="OUT_B" x="12.7" y="-7.62" length="short" direction="out" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="-12.7" size="1.6764" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="12.7" size="1.6764" layer="95" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="PWR">
+<description>PWN IC Connections</description>
+<pin name="VCC" x="0" y="15.24" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<text x="0" y="0" size="1.6764" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="GND_PAD">
+<description>Central Thermal Pad, Normally Grounded</description>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<text x="0" y="0" size="1.6764" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="PLATED_PAD">
+<description>Plated Slot</description>
+<pin name="PAD" x="5.08" y="0" visible="pin" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LDO40L-ADJ">
+<description>The Adjustable version of ST LDO40L symbol</description>
+<pin name="GND@" x="-2.54" y="-10.16" visible="pad" length="short" rot="R90"/>
+<pin name="GND@1" x="2.54" y="-10.16" visible="pad" length="short" rot="R90"/>
+<pin name="IN" x="-12.7" y="5.08" length="short"/>
+<pin name="EN" x="-12.7" y="-5.08" length="short"/>
+<pin name="OUT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SNS" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="ADJ" x="12.7" y="-5.08" length="short" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.286" y="-5.334" size="1.4224" layer="97" align="top-left">GND</text>
+<text x="2.54" y="10.16" size="1.4224" layer="96" align="top-left">&gt;VALUE</text>
+<text x="-10.16" y="10.16" size="1.4224" layer="95" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="ZENER">
+<description>Zener Diode Symbol</description>
+<pin name="A" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="K" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.016" layer="95" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.016" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="NPN">
+<description>NPN generic transistor symbol</description>
+<pin name="B" x="-2.54" y="0" visible="off" length="short"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.635" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.635" x2="1.778" y2="-1.9685" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.9685" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.9685" x2="1.2065" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.2065" y1="-1.016" x2="0.6985" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="0.6985" y1="-1.651" x2="1.778" y2="-1.9685" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-1.7145" x2="1.2065" y2="-1.2065" width="0.1524" layer="94"/>
+<wire x1="1.2065" y1="-1.2065" x2="1.0795" y2="-1.3335" width="0.1524" layer="94"/>
+<wire x1="1.0795" y1="-1.3335" x2="1.3335" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.4605" y1="-1.778" x2="0.889" y2="-1.5875" width="0.1524" layer="94"/>
+<wire x1="0.889" y1="-1.5875" x2="0.9525" y2="-1.4605" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="-1.4605" x2="1.27" y2="-1.651" width="0.1524" layer="94"/>
+<pin name="C" x="2.54" y="2.54" visible="off" length="point"/>
+<pin name="E" x="2.54" y="-2.54" visible="off" length="point"/>
+<text x="5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<text x="5.08" y="2.54" size="1.27" layer="95" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="ATA6560">
+<description>High-Speed CAN Transceiver with Standby Mode CAN FD Ready</description>
+<pin name="STBY" x="-15.24" y="7.62" length="short" direction="in"/>
+<pin name="NSIL" x="-15.24" y="2.54" length="short" direction="in"/>
+<pin name="TXD" x="-15.24" y="-2.54" length="short" direction="in"/>
+<pin name="RXD" x="-15.24" y="-7.62" length="short" direction="out"/>
+<pin name="GND" x="15.24" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="CANL" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="CANH" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="VCC" x="15.24" y="7.62" length="short" direction="pwr" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="12.7" size="1.6764" layer="95" align="top-left">&gt;NAME</text>
+<text x="-12.7" y="-12.7" size="1.6764" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="PIC18F26K83">
+<description>&lt;b&gt;PIC18F(L)25/26K83&lt;/b&gt; Symbol</description>
+<pin name="ICSPDAT/RB7" x="20.32" y="22.86" length="short" rot="R180"/>
+<pin name="ICSPCLK/RB6" x="20.32" y="20.32" length="short" rot="R180"/>
+<pin name="RB5" x="20.32" y="17.78" length="short" rot="R180"/>
+<pin name="RB4" x="20.32" y="15.24" length="short" rot="R180"/>
+<pin name="RB3" x="20.32" y="12.7" length="short" rot="R180"/>
+<pin name="RB2" x="20.32" y="10.16" length="short" rot="R180"/>
+<pin name="RB1" x="20.32" y="7.62" length="short" rot="R180"/>
+<pin name="RB0" x="20.32" y="5.08" length="short" rot="R180"/>
+<pin name="RC7" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="RC6" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="RC5" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="RC4" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="RC3" x="20.32" y="-15.24" length="short" rot="R180"/>
+<pin name="RC2" x="20.32" y="-17.78" length="short" rot="R180"/>
+<pin name="RC1" x="20.32" y="-20.32" length="short" rot="R180"/>
+<pin name="RC0" x="20.32" y="-22.86" length="short" rot="R180"/>
+<pin name="RE3/!MCLR!" x="-20.32" y="22.86" length="short"/>
+<pin name="RA7" x="-20.32" y="15.24" length="short"/>
+<pin name="RA6" x="-20.32" y="12.7" length="short"/>
+<pin name="RA5" x="-20.32" y="10.16" length="short"/>
+<pin name="RA4" x="-20.32" y="7.62" length="short"/>
+<pin name="RA3" x="-20.32" y="5.08" length="short"/>
+<pin name="RA2" x="-20.32" y="2.54" length="short"/>
+<pin name="RA1" x="-20.32" y="0" length="short"/>
+<pin name="RA0" x="-20.32" y="-2.54" length="short"/>
+<pin name="VDD" x="-20.32" y="-10.16" length="short"/>
+<pin name="VSS@1" x="-20.32" y="-22.86" length="short"/>
+<pin name="VSS@" x="-20.32" y="-20.32" length="short"/>
+<wire x1="-17.78" y1="25.4" x2="17.78" y2="25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="25.4" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="25.4" width="0.254" layer="94"/>
+<text x="-17.78" y="27.94" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-17.78" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PIC-ICSP">
+<description>PIC-ICSP</description>
+<pin name="!MCLR" x="-5.08" y="5.08" length="short"/>
+<pin name="VCC" x="-5.08" y="2.54" length="short"/>
+<pin name="GND" x="-5.08" y="0" length="short"/>
+<pin name="PGD" x="-5.08" y="-2.54" length="short"/>
+<pin name="PGC" x="-5.08" y="-5.08" length="short"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="10.16" size="1.6764" layer="95" align="top-left">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.6764" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="1X4_PIN_HEADER">
+<description>1X4 Generic Pin Header Symbol</description>
+<pin name="P$1" x="-2.54" y="2.54" visible="pad" length="short"/>
+<pin name="P$2" x="-2.54" y="0" visible="pad" length="short"/>
+<pin name="P$3" x="-2.54" y="-2.54" visible="pad" length="short"/>
+<pin name="P$4" x="-2.54" y="-5.08" visible="pad" length="short"/>
+<wire x1="0" y1="4.445" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="0" y1="-6.985" x2="5.08" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-6.985" x2="5.08" y2="4.445" width="0.254" layer="94"/>
+<wire x1="5.08" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DMC4015SSD" prefix="T">
+<description>&lt;b&gt; DMC4015SSD &lt;/b&gt;
+&lt;br&gt; &lt;br&gt;
+COMPLEMENTARY PAIR ENHANCEMENT MODE MOSFET
+&lt;br&gt; &lt;br&gt;
+&lt;b&gt; Description &lt;/b&gt;
+&lt;br&gt;
+This  new generation  MOSFET is designed  to  minimize the on-state resistance (RDS(ON)) yet  maintain  superior  switching  performance, &lt;br&gt; 
+which   makes it  ideal for high-efficiency power management applications. &lt;br&gt; 
+&lt;br&gt;
+&lt;b&gt;Applications &lt;/b&gt;
+
+&lt;ul style="list-style-type:square"&gt;
+ &lt;li&gt;DC-DC Converters&lt;/li&gt;
+ &lt;li&gt;Power Management Functions &lt;/li&gt;
+ &lt;li&gt;Backlighting&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="N" symbol="N-CHANNEL" x="5.08" y="-7.62"/>
+<gate name="P" symbol="P-CHANNEL" x="5.08" y="7.62"/>
+</gates>
+<devices>
+<device name="-13" package="SO-8">
+<connects>
+<connect gate="N" pin="D" pad="7"/>
+<connect gate="N" pin="D@1" pad="8"/>
+<connect gate="N" pin="G" pad="2"/>
+<connect gate="N" pin="S" pad="1"/>
+<connect gate="P" pin="D" pad="5"/>
+<connect gate="P" pin="D@1" pad="6"/>
+<connect gate="P" pin="G" pad="4"/>
+<connect gate="P" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP6C02" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;MCP6C02&lt;/b&gt;
+&lt;br&gt; &lt;br&gt;
+Zero-Drift, 65V High-Side Current Sense Amplifier
+&lt;br&gt; &lt;br&gt;
+The  Microchip  Technology  Inc.  MCP6C02  high-side current sense amplifier is offered with preset gains of 20,  50  and  100 V/V. &lt;br&gt;  
+The  Common-mode  input  range (VIP) is +3V to +65V. The differential-mode input range (VDM=VIP–VIM) supports unidirectional and bidirectional applications. &lt;br&gt;
+The power supply can be set between 2.0V and 5.5V. This device is specified from -40°C to +125°C (E-Temp) and is provided in the SOT-23 package. &lt;br&gt;
+The  Zero-Drift  architecture  supports  very  low  inputerrors, which allow a design to use shunt resistors of lower value (and lower power dissipation).</description>
+<gates>
+<gate name="G$1" symbol="MCP6C02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="SOT-23-6">
+<connects>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="REF" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+<connect gate="G$1" pin="VIM" pad="4"/>
+<connect gate="G$1" pin="VIP" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP14A0454" prefix="IC" uservalue="yes">
+<description>&lt;b&gt; MCP14A0454 &lt;/b&gt;
+&lt;br&gt; &lt;br&gt;
+
+The  MCP14A0453/4/5  devices  are  high-speed  dual
+MOSFET  drivers  that  are  capable  of  providing  up  to
+4.5A of peak current while operating from a single 4.5V
+to  18V  supply. &lt;br&gt;  There  are  three  output  configurations
+available:     dual     inverting     (MCP14A0453),     dual
+noninverting    (MCP14A0454)    and    complementary
+(MCP14A0455). &lt;br&gt;     These     devices     feature     low
+shoot-through current, matched rise and fall times, and
+short  propagation  delays,  which  make  them  ideal  for
+high switching frequency applications.</description>
+<gates>
+<gate name="A" symbol="MCP14A0454" x="0" y="0"/>
+<gate name="PWR" symbol="PWR" x="30.48" y="0"/>
+</gates>
+<devices>
+<device name="MNY" package="TDFN-8-EP">
+<connects>
+<connect gate="A" pin="EN_A" pad="1"/>
+<connect gate="A" pin="EN_B" pad="8"/>
+<connect gate="A" pin="IN_A" pad="2"/>
+<connect gate="A" pin="IN_B" pad="4"/>
+<connect gate="A" pin="OUT_A" pad="7"/>
+<connect gate="A" pin="OUT_B" pad="5"/>
+<connect gate="PWR" pin="GND" pad="3 EP"/>
+<connect gate="PWR" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SN" package="SOIC-8">
+<connects>
+<connect gate="A" pin="EN_A" pad="1"/>
+<connect gate="A" pin="EN_B" pad="8"/>
+<connect gate="A" pin="IN_A" pad="2"/>
+<connect gate="A" pin="IN_B" pad="4"/>
+<connect gate="A" pin="OUT_A" pad="7"/>
+<connect gate="A" pin="OUT_B" pad="5"/>
+<connect gate="PWR" pin="GND" pad="3"/>
+<connect gate="PWR" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MS" package="MSOP-8">
+<connects>
+<connect gate="A" pin="EN_A" pad="1"/>
+<connect gate="A" pin="EN_B" pad="8"/>
+<connect gate="A" pin="IN_A" pad="2"/>
+<connect gate="A" pin="IN_B" pad="4"/>
+<connect gate="A" pin="OUT_A" pad="7"/>
+<connect gate="A" pin="OUT_B" pad="5"/>
+<connect gate="PWR" pin="GND" pad="3"/>
+<connect gate="PWR" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PLATED_SLOT" prefix="PAD" uservalue="yes">
+<description>Plated Slot / Pad for small DC motor leads</description>
+<gates>
+<gate name="G$1" symbol="PLATED_PAD" x="-5.08" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="PLATED_SLOT">
+<connects>
+<connect gate="G$1" pin="PAD" pad="P$1 P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SISA01DN" prefix="T" uservalue="yes">
+<description>&lt;b&gt;SiSA01DN&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;P-Channel 30V (D-S) MOSFET&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;FEATURES&lt;/b&gt;&lt;br&gt;
+&lt;ul style="list-style-type:square"&gt;
+&lt;li&gt;TrenchFET® Gen IV p-channel power MOSFET&lt;/li&gt;
+&lt;li&gt;Provides exceptionally low RDS(ON) in a compact package that is thermally enhanced &lt;/li&gt;
+&lt;li&gt;Enables higher power density&lt;/li&gt;
+&lt;li&gt;100% Rg and UIS tested &lt;/li&gt;
+&lt;li&gt;Material   categorization: for definitions of compliance please see: &lt;a hef="www.vishay.com/doc?99912"&gt;Document No. 99912&lt;/a&gt;
+&lt;/ul&gt;
+&lt;b&gt;APPLICATIONS&lt;/b&gt;
+&lt;ul style="list-style-type:square"&gt;
+&lt;li&gt;Battery management in mobile devices&lt;/li&gt;
+&lt;li&gt;Adapter and charger switch&lt;/li&gt;
+&lt;li&gt;Battery switch&lt;/li&gt;
+&lt;li&gt;Load switch&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="P-CHANNEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERPAK-1212-8">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8"/>
+<connect gate="G$1" pin="D@1" pad="EP"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LDO40L" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;LDO40L&lt;/b&gt;&lt;br&gt;
+&lt;p&gt;&lt;b&gt;Description&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+The LDO40L is a 400 mA LDO regulator, designed for being used in severe automotive environments.&lt;br&gt;
+Low quiescent current makes it suitable for applications permanently connected to battery.&lt;br&gt;
+This feature is especially critical when electronic modules remain in active mode when ignition is off. &lt;br&gt;
+The LDO40L embeds protection functions, such as: current limit and thermal-shutdown.&lt;br&gt;
+The extended input voltage range, low drop voltage and low quiescent current features make it suitable also for low power industrial and consumer applications. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Applications&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Automotive Applications&lt;/li&gt;
+&lt;li&gt;Body control modules&lt;/li&gt;
+&lt;li&gt;Instruments and clusters&lt;/li&gt;
+&lt;li&gt;Automotive LED lighting&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Features&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Low quiescent current: typ. 45 μA at no load&lt;/li&gt;
+&lt;li&gt;Wide input voltage operating range up to 38 V&lt;/li&gt;
+&lt;li&gt;Low startup voltage: 3.5 V&lt;/li&gt;
+&lt;li&gt;Output current up to 400mA&lt;/li&gt;
+&lt;li&gt;Output voltage options: Adj from 2.5 V and fixed, 3.0, 3.3, 5.0 and 8.5 V&lt;/li&gt;
+&lt;li&gt;Output voltage accuracy:&lt;ul&gt;
+&lt;li&gt;± 1% typ. @ 25 °C&lt;/li&gt;
+&lt;li&gt;± 3% (including line, load and temperature variation)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Ultra low dropout:&lt;ul&gt;
+&lt;li&gt;36mV @ 100mA load current&lt;/li&gt;
+&lt;li&gt;140mV @ 400mA load current &lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;High PSRR: 70db @ 1kHz&lt;/li&gt;
+&lt;li&gt;Very low noise: 20 μV&lt;sub&gt;RMS&lt;/sub&gt; / V&lt;sub&gt;OUT&lt;/sub&gt;&lt;/li&gt;
+&lt;li&gt;Protection features: current limitation, thermal shutdown&lt;/li&gt;
+&lt;li&gt;-40 °C to +125 °C operating temperature range&lt;/li&gt;
+&lt;li&gt;Package: DFN6 (3x3) (wettable flanks)&lt;/li&gt;
+&lt;li&gt;AEC-Q100 qualified (grade 1)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LDO40L-ADJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-ADJ" package="DFN6-3X3">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="6"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="GND@" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="EP"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="SNS" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DDZ12" prefix="D" uservalue="yes">
+<description>&lt;b&gt;DDZ12CSF&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+0.5W SURFACE MOUNT PRECISION 12V ZENER DIODE&lt;br&gt;
+from &lt;b&gt;Diodes Incorporated&lt;/b&gt; in SOD-323F-2 Package
+&lt;p&gt;&lt;b&gt;Features&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;500mW Power Dissipation on FR-4 PCB&lt;/li&gt;
+&lt;li&gt;Very Tight Tolerance on V&lt;sub&gt;z&lt;/sub&gt;&lt;/li&gt;
+&lt;li&gt;Ideally Suited for Automated Assembly Processes&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Totally Lead-Free &amp; Fully RoHS Compliant&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Halogen and Antimony Free. &lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CSF" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMBT2222AM3T5G" prefix="T" uservalue="yes">
+<description>&lt;b&gt;MMBT2222AM3T5G&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;NPN General Purpose Transistor&lt;/b&gt;
+&lt;p&gt;The  MMBT2222AM3T5G  device  is  a  spin−off  of  our  popular SOT−23 three−leaded  device.&lt;br&gt;
+It  is  designed  for  general  purpose amplifier applications and is housed in the SOT−723 surface mount package.&lt;br&gt;
+This  device  is  ideal  for  low−power  surface  mount applications where board space is at a premium&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Features&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduces Board Space&lt;/li&gt;
+&lt;li&gt;NSV Prefix for Automotive and Other Applications Requiring Unique Site and &lt;br&gt;
+Control Change Requirements; AEC−Q101 Qualified and PPAP Capable&lt;/li&gt;
+&lt;li&gt;These Devices are Pb−Free, Halogen Free/BFR Free and are RoHS Compliant&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-723-3">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATA6560" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;ATA6560&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;High-Speed CAN Transceiver with Standby Mode&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+CAN FD Ready&lt;/b&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;b&gt;General Description&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+The ATA6560/1 is a high-speed CAN transceiver that provides an interface between&lt;br&gt;
+a Controller Area Net-work (CAN) protocol controller and the physical two-wire  CAN  bus.&lt;br&gt;
+The  transceiver  is  designed  for high-speed  (up  to  5 Mbps)  CAN  applications  in  the automotive &lt;br&gt;
+industry, providing differential transmit and receive  capability  to  (a  microcontroller  with)  a  CAN&lt;br&gt;
+protocol controller.&lt;br&gt;
+&lt;br&gt;
+If offers improved Electromagnetc Compatibility (EMC) and ESD performance,&lt;br&gt;
+as well as features such as:&lt;ul&gt;
+&lt;li&gt;Ideal passive behavior to CAN bus when the supply is off&lt;/li&gt;
+&lt;li&gt;Direct interfacing to microcontrollers with supply voltages from 3V to 5V&lt;/li&gt; &lt;/ul&gt;
+Three operating modes, together with the dedicated fail-safe features, make the &lt;br&gt;
+ATA6560/1 an exellent choice for all types of high-speed CAN networks, expecially&lt;br&gt;
+in nodes requiring a Low-Power mode with wake-up via the CAN bus.&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Features&lt;/b&gt;
+&lt;ul&gt;
+&lt;li &gt;Fully ISO 11898-2, ISO 11898-5 and SAE J2284 Compliant&lt;/li&gt;
+&lt;li&gt;CAN FD Ready&lt;/li&gt;
+&lt;li&gt;Communication Speed up to 5Mbps&lt;/li&gt;
+&lt;li&gt;Low Electromagnetic Emission (EME) and High Electromagnetic Immunity (EMI)&lt;/li&gt;
+&lt;li&gt;Differential Reciever with Wide Common-Mode Range&lt;/li&gt;
+&lt;li&gt;ATA6560: Silent Mode (Reciever Only)&lt;/li&gt;
+&lt;li&gt;Remote Wake-Up Capability via CAN Bus&lt;/li&gt;
+&lt;li&gt;Functional Behavior Predictable under All Supply Conditions&lt;/li&gt;
+&lt;li&gt;Transceiver Disengages from the Bus when Not Powered Up&lt;/li&gt;
+&lt;li&gt;RXD Recessive Clamping Detection&lt;/li&gt;
+&lt;li&gt;High Electrostatic Discharge (ESD) Handling Capability on the Bus Pins&lt;/li&gt;
+&lt;li&gt;Bus Pins Protected Against Transients in Automotive Environments&lt;/li&gt;
+&lt;li&gt;Transmit Data (TXD) Dominant Time-Out Function&lt;/li&gt;
+&lt;li&gt;Undervoltage Detection on V&lt;sub&gt;cc&lt;/sub&gt; and V&lt;sub&gt;IO&lt;/sub&gt; Pins&lt;/li&gt;
+&lt;li&gt;CANH/CANL Short-Circuit and Overtemperature Protected&lt;/li&gt;
+&lt;li&gt;Qualified According to AEC-Q100: Only&lt;br&gt;
+ATA6560-GAQW, ATA6560-GBQW&lt;br&gt;
+ATA6561-GAQW, ATA6561-GBQW&lt;/li&gt;
+&lt;li&gt;Packages: SOIC-8, VDFN-8 with Wettable Flanks&lt;br&gt; (Moisture Sensitivity Level 1)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Applications&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+Classical CAN and CAN FB networks in the following applications:
+&lt;ul&gt;
+&lt;li&gt;Automotive&lt;/li&gt;
+&lt;li&gt;Industrial&lt;/li&gt;
+&lt;li&gt;Aerospace&lt;/li&gt;
+&lt;li&gt;Medical&lt;/li&gt;
+&lt;li&gt;Consumer&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;b&gt;2018 Microchip Technology Inc.&lt;/b&gt; Document Reference No.: &lt;b&gt;DS20005991A&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="ATA6560" x="0" y="0"/>
+</gates>
+<devices>
+<device name="GB" package="VDFN-8-EP">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2 EP"/>
+<connect gate="G$1" pin="NSIL" pad="5"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="STBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIC18F26K83" prefix="IC" uservalue="yes">
+<description>&lt;h1&gt;PIC18(L)F25/26K83&lt;/h1&gt;&lt;br&gt;
+
+&lt;h1&gt;28-Pin, Low-Power, High-Performance Microcontrollers&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+with CAN Technology&lt;/h1&gt;&lt;br&gt;
+
+&lt;p&gt;&lt;h2&gt;Description&lt;/h2&gt;&lt;br&gt;
+
+The PIC18(L)FXXK83 is a full-featured CAN product family that can be used in automotive and industrial applications.&lt;br&gt;
+The multitude of communication peripherals found on the product family, such as CAN, SPI, two I2Cs, two UARTs, LIN,&lt;br&gt;
+DMX, and DALI can handle a wide range of wired and wireless (using external modules) communication protocols for &lt;br&gt;
+intelligent applications. This family includes a 12-bit ADC with Computation (ADC2) extensions for automated signal&lt;br&gt;
+analysis to reduce the complexity of the application. This, combined with the Core Independent Peripherals integration&lt;br&gt;
+capabilities, enables functions for motor control, power supply, sensor, signal and user interface applications.&lt;br&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;h2&gt;Core Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;C Compiler Optimized RISC Architecture&lt;/li&gt;
+&lt;li&gt;Operating Speed:&lt;br&gt;
+- Up to 64 MHz clock operation&lt;br&gt;
+- 62.5 ns minimum instruction cycle&lt;/li&gt;
+&lt;li&gt;Two Direct Memory Access (DMA) Controllers:&lt;br&gt;
+- Data transfers to SFR/GPR spaces from either Program&lt;br&gt;
+&amp;nbsp;&amp;nbsp;Flash Memory, Data EEPROM or SFR/GPR spaces&lt;br&gt;
+- User-programmable source and destination sizes&lt;br&gt;
+- Hardware and software triggered data transfers&lt;/li&gt;
+&lt;li&gt;System Bus Arbiter with User-Configurable Priorities for Scanner&lt;br&gt;
+and DMA1/DMA2 with respect to the main line and interrpt execution&lt;/li&gt;
+&lt;li&gt;Vectored Interrupt Capability:&lt;br&gt;
+- Selectable high/low priority&lt;br&gt;
+- Fixed interrupt latency&lt;br&gt;
+- Programmable vector table base address&lt;/li&gt;
+&lt;li&gt;31-Level Deep Hardware Stack&lt;/li&gt;
+&lt;li&gt;Low-Current Power-on Reset (POR)&lt;/li&gt;
+&lt;li&gt;Configurable Power-up Timer (PWRT)&lt;/li&gt;
+&lt;li&gt;Brown-Out Reset (BOR) &lt;/li&gt;
+&lt;li&gt;Low-Power BOR (LPBOR) Option&lt;/li&gt;
+&lt;li&gt;Windowed Watchdog Timer (WWDT):&lt;br&gt;
+- Variable prescaler selection&lt;br&gt;
+- Variable window size selection&lt;br&gt;
+- Configurable in hardware or software&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h2&gt;Memory&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Up to 64 KB Flash Program Memory&lt;/li&gt;
+&lt;li&gt;Up to 4 KB Data SRAM Memory&lt;/li&gt;
+&lt;li&gt;Up to 1 KB Data EEPROM&lt;/li&gt;
+&lt;li&gt;Memory Access Partition (MAP):&lt;br&gt;
+- Configurable boot and app region seizes with&lt;br&gt;
+&amp;nbsp;&amp;nbsp;individual write-protections&lt;/li&gt;
+&lt;li&gt;Programmable Code Protection&lt;/li&gt;
+&lt;li&gt;Device Information Area (DIA) stores:&lt;br&gt;
+- Unique IDs and Devices IDs&lt;br&gt;
+- Temp Sensor factory-calibrated data&lt;br&gt;
+- Fixed Voltage Reference calibrated data &lt;/li&gt;
+&lt;li&gt;Device Configuration Information (DCI) stores:&lt;br&gt;
+- Erase row size&lt;br&gt;
+- Number of write latches per row &lt;br&gt;
+- Number of user rows&lt;br&gt;
+- Data EEPROM memory size&lt;br&gt;
+- Pin Count&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h2&gt;Operating Characteristics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Operating Voltage Range:&lt;br&gt;
+- 1.8V to 3.6V (PIC18LF25/26K83)&lt;br&gt;
+- 2.3V to 5.5V (PIC18F25/26K83)&lt;/li&gt;
+&lt;li&gt; Temperature Range:&lt;br&gt;
+- Industrial: -40°C to 85°C&lt;br&gt;
+- Extended: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h2&gt;Power-Saving Functionality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;DOZE mode: Ability to run CPU core slower than&lt;br&gt;
+&amp;nbsp;&amp;nbsp; the system clock&lt;/li&gt;
+&lt;li&gt;IDLE mode: Ability to halt CPU core while internal&lt;br&gt;
+&amp;nbsp;&amp;nbsp; peripherals continue operating&lt;/li&gt;
+&lt;li&gt;SLEEP mode: Lowest power consumption&lt;/li&gt;
+&lt;li&gt;Peripheral Module Disable (PMD):&lt;br&gt;
+- Ability to disable unsued peripherals to &lt;br&gt;
+&amp;nbsp;&amp;nbsp;minimize power consumption&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h2&gt;eXtreme Low-Power (XLP) Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sleep mode: 60nA @1.8V, typical&lt;/li&gt;
+&lt;li&gt;Windowed Watchdog Timer: 720nA @ 1.8V, typical &lt;/li&gt;
+&lt;li&gt; Secondary Oscillator: 580nA @ 32 kHz&lt;/li&gt;
+&lt;li&gt; Operating Current:&lt;br&gt;
+- 4 uA @ 32kHz, 1.8V, typical&lt;br&gt;
+- 45uA/MHz @ 1.8V, typical&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h2&gt;Digital Peripherals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Three 8-Bit Timers (TMR2/4/6) with Hardware&lt;br&gt;
+&amp;nbsp;&amp;nbsp;Limit Timer (HLT):&lt;br&gt;
+- Hardware monitoring and Fault detection&lt;/li&gt;
+&lt;li&gt;Four 16-Bit Timers (TMR0/1/3/5)&lt;/li&gt;
+&lt;li&gt;Four Configurable Logic Cell (CLC):&lt;br&gt;
+- Integrated combinational and sequential logic&lt;/li&gt;
+&lt;li&gt;Three Complementary Waveform Generators&lt;br&gt;
+&amp;nbsp;&amp;nbsp;(CWGs):&lt;br&gt;
+- Rising and falling edge dead-band control&lt;br&gt;
+- Full-bridge, half-bridge, 1-channel drive&lt;br&gt;
+- Multiple signal sources&lt;br&gt;
+- Programmable dead band&lt;br&gt;
+- Fault-shutdown input&lt;/li&gt;
+&lt;li&gt;Four Capture/Compare/PWM (CCP) modules&lt;/li&gt;
+&lt;li&gt;Four 10-Bit Pulse-Width Modulators (PWMs)&lt;/li&gt;
+&lt;li&gt;Numerically Controlled Oscillator (NCO):&lt;br&gt;
+- Generates true linear frequency control&lt;br&gt;
+- High resolution using 20-bit accumulator and &lt;br&gt;
+&amp;nbsp;&amp;nbsp;20-bit increment values&lt;/li&gt;
+&lt;li&gt;DSM: Data Signal Modulator:&lt;br&gt;
+- Multiplex two carrier clocks, with glitch pre-&lt;br&gt;
+&amp;nbsp;&amp;nbsp;vention feature&lt;br&gt;
+- Multiple sources for each carrier&lt;/li&gt;
+&lt;li&gt;Programmable CRC with Memory Scan:&lt;br&gt;
+- Reliable data/program memory monitoring for &lt;br&gt;
+&amp;nbsp;&amp;nbsp;fail-safe operation(e.g., Class B)&lt;br&gt;
+- Calculate CRC over any portion of program &lt;br&gt;
+&amp;nbsp;&amp;nbsp;memory&lt;/li&gt;
+&lt;li&gt;Two UART Modules:&lt;br&gt;
+- Modules are Asynchronous, RS-232, RS-485 compatibility &lt;br&gt;
+- One of the UART modules supports LIN Master and Slave &lt;br&gt;
+&amp;nbsp;&amp;nbsp; DMX mode, DALI Gear and Device protocols&lt;br&gt;
+- Automatic and user-timed BREAK period generation&lt;br&gt;
+- DMA Compatible&lt;br&gt;
+- Automatic checksums&lt;br&gt;
+- Programmable 1, 1.5 and two Stop bits&lt;br&gt;
+- Wake-up on BREAK reception&lt;/li&gt;
+&lt;li&gt;One SPI module:&lt;br&gt;
+- Configurable length bytes&lt;br&gt;
+- Configurable length data packets&lt;br&gt;
+- Receive-without-transmit option&lt;br&gt;
+- Transmit-without-receive option &lt;br&gt;
+- Transfer byte counter &lt;br&gt;
+- Seperate Transmit and Receive Buffers with 2-byte FIFO &lt;br&gt;
+&amp;nbsp;&amp;nbsp; and DMA capabilities &lt;/li&gt;
+&lt;li&gt; CAN module:&lt;br&gt;
+- Conforms to CAN 2.0B Active Specification&lt;br&gt;
+- Three operating modes: Legacy (compatible with existing &lt;br&gt;
+&amp;nbsp;&amp;nbsp; PIC18CXX8/FXX8 CAN modules), Enhanced mode and FIFO mode.&lt;br&gt;
+- Message bit rates up to 1 Mbps &lt;br&gt;
+- DeviceNet&lt;sup&gt;TM&lt;/sup&gt; data byte filter support &lt;br&gt;
+- Six programmable receive / transmit buffers &lt;br&gt;
+- Three dedicated transmit buffers &lt;br&gt;
+- Two dedicated receive buffers &lt;br&gt;
+- 16 Full, 29-Bit acceptance filters with dynamic assosiation &lt;br&gt;
+- Three full, 29-Bit acceptance masks &lt;br&gt;
+- Automatic remote frame handling &lt;br&gt;
+- Advanced error management features &lt;/li&gt;
+&lt;li&gt;Two I&lt;sup&gt;2&lt;/sup&gt;C modules, SMBus, PMBus&lt;sup&gt;TM&lt;/sup&gt; compatible: &lt;br&gt;
+- Dedicated Address, Transmit and Receive buffers &lt;br&gt;
+- Bus Collision Detection with arbitration &lt;br&gt;
+- Bus time-out detection and handling &lt;br&gt;
+- Multi-Master mode &lt;br&gt;
+- Separate Transmit and Receive Buffers with 2-Byte FIFO &lt;br&gt;
+&amp;nbsp;&amp;nbsp;and DMA capabilities &lt;br&gt;
+- I&lt;sup&gt;2&lt;/sup&gt;C, SMBus 2.0 and SMBus 3.0 and&lt;br&gt;
+&amp;nbsp;&amp;nbsp; 1.8V input level selections&lt;/li&gt;
+&lt;li&gt; Device I/O Port Features: &lt;br&gt;
+- 25 I/O pins (PIC18F(L)F25K83)&lt;br&gt;
+- One input-only pin &lt;br&gt;
+- Individually programmable I/O direction, open-drain, &lt;br&gt;
+&amp;nbsp;&amp;nbsp; slew rate, weak pull-up control &lt;br&gt;
+- Interrupt-on-change &lt;br&gt;
+- Three External Interrupt Pins&lt;/li&gt;
+&lt;li&gt; Peripheral Pin Select (PPS): &lt;br&gt;
+- Enables pin mapping of digital I/O&lt;/li&gt;
+&lt;li&gt; Two Signal Measurement Timer (SMT):&lt;br&gt;
+- 24-Bit timer/counter with prescaler&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h2&gt;Analog Peripherals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt; Analog-to-Digital Converter with Computation (ADC&lt;sup&gt;2&lt;/sup&gt;):&lt;br&gt;
+- 12-Bit with up to 24 external channels &lt;br&gt;
+- Automated math functions on input signals:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;averaging, filter calculations, oversampling and threshold comparison &lt;br&gt;
+- Operates in Sleep &lt;br&gt;
+- Integrated charge pump for improved low-voltage operation &lt;/li&gt;
+&lt;li&gt; Hardware Capacitive Voltage Divider (CVD):&lt;br&gt;
+- Automates touch sampling and reduces software size and &lt;br&gt;
+&amp;nbsp;&amp;nbsp;CPU usage when touch or proximity sensing is required &lt;br&gt;
+- Adjustable sample and hold capacitor array &lt;br&gt;
+- Two guard ring output drives &lt;/li&gt;
+&lt;li&gt; Temperature Sensor: &lt;br&gt;
+- Internal connection to ADC &lt;br&gt;
+- Can be calibrated for improved accuracy &lt;/li&gt;
+&lt;li&gt; Two Comparators: &lt;br&gt;
+- Low-Power / High-Speed mode &lt;br&gt;
+- Fixed Voltage Reference at non-inverting input(s) &lt;br&gt;
+- Comparator outputs externally accessible &lt;/li&gt;
+&lt;li&gt; 5-Bit Digital-to-Analog Converter (DAC): &lt;br&gt;
+- 5-Bit resolution, rail-to-rail &lt;br&gt;
+- Positive Reference Selection &lt;br&gt;
+- Unbuffered I/O pin output &lt;br&gt;
+- Internal connections to ADCs and comparators &lt;/li&gt;
+&lt;li&gt; Voltage Reference: &lt;br&gt;
+- Fixed Voltage Reference with 1.024V, 2.048 and 4.096V output levels &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h2&gt; Flexible Oscillator Structure &lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt; High-Precision Internal Oscillator: &lt;br&gt;
+- Selectable frequency range up to 64 MHz &lt;br&gt;
+- ±1% at calibration (nominal) &lt;/li&gt;
+&lt;li&gt; Low-Power Internal 32 kHz Oscillator (LFINTOSC) &lt;/li&gt;
+&lt;li&gt; External 32 kHz Crystal Oscillator (SOCS) &lt;/li&gt;
+&lt;li&gt; External Oscillator Block with: &lt;br&gt;
+- x4 PLL with external sources &lt;br&gt;
+- Three crystal / resonator modes up to 20 MHz &lt;br&gt;
+- Three external clock modes up to 20 MHz &lt;/li&gt;
+&lt;li&gt; Fail-Safe Clock Monitor &lt;/li&gt;
+&lt;li&gt; Oscillator Start-up Timer (OST): &lt;br&gt;
+- Ensures stability of crystal oscillator sources &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;
+Source: &lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/40001943A.pdf"&gt; &lt;b&gt;PIC18(L)F25/26K83&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="PIC18F26K83" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ML" package="QFN-28">
+<connects>
+<connect gate="G$1" pin="ICSPCLK/RB6" pad="24"/>
+<connect gate="G$1" pin="ICSPDAT/RB7" pad="25"/>
+<connect gate="G$1" pin="RA0" pad="27"/>
+<connect gate="G$1" pin="RA1" pad="28"/>
+<connect gate="G$1" pin="RA2" pad="1"/>
+<connect gate="G$1" pin="RA3" pad="2"/>
+<connect gate="G$1" pin="RA4" pad="3"/>
+<connect gate="G$1" pin="RA5" pad="4"/>
+<connect gate="G$1" pin="RA6" pad="7"/>
+<connect gate="G$1" pin="RA7" pad="6"/>
+<connect gate="G$1" pin="RB0" pad="18"/>
+<connect gate="G$1" pin="RB1" pad="19"/>
+<connect gate="G$1" pin="RB2" pad="20"/>
+<connect gate="G$1" pin="RB3" pad="21"/>
+<connect gate="G$1" pin="RB4" pad="22"/>
+<connect gate="G$1" pin="RB5" pad="23"/>
+<connect gate="G$1" pin="RC0" pad="8"/>
+<connect gate="G$1" pin="RC1" pad="9"/>
+<connect gate="G$1" pin="RC2" pad="10"/>
+<connect gate="G$1" pin="RC3" pad="11"/>
+<connect gate="G$1" pin="RC4" pad="12"/>
+<connect gate="G$1" pin="RC5" pad="13"/>
+<connect gate="G$1" pin="RC6" pad="14"/>
+<connect gate="G$1" pin="RC7" pad="15"/>
+<connect gate="G$1" pin="RE3/!MCLR!" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="17"/>
+<connect gate="G$1" pin="VSS@" pad="5 EP"/>
+<connect gate="G$1" pin="VSS@1" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIC-ICSP" prefix="J" uservalue="yes">
+<description>&lt;b&gt;Microchip&lt;/b&gt; PIC Microcontroller ICSP based on a 5 PIN &lt;b&gt;Molex&lt;/b&gt; PICO-Blade pin header</description>
+<gates>
+<gate name="G$1" symbol="PIC-ICSP" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="-MICRO" package="PICOBLADE-5">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="PGC" pad="5"/>
+<connect gate="G$1" pin="PGD" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X4_PICOBLADE_CONNECTOR" prefix="J" uservalue="yes">
+<description>&lt;b&gt;1X4 PICOBlade Connector&lt;/b&gt; from &lt;b&gt;Molex&lt;/b&gt;&lt;br&gt;
+1.25mm Pitch</description>
+<gates>
+<gate name="G$1" symbol="1X4_PIN_HEADER" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="PICOBLADE-4">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

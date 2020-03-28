@@ -1,0 +1,5 @@
+Software/dist
+Software/build
+Software/nbproject/private
+Software/nbproject/Makefile-*
+Software/nbproject/Package-*
