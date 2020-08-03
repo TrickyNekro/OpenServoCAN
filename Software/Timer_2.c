@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 /* ************************************************************************** */
 
-#include <pic18f26k83.h>
-
 #include "Timer_2.h"
 
 /* ************************************************************************** */
@@ -263,7 +261,7 @@ bool Timer_2_Status_Get ( void )
 int8_t Timer_2_Configure ( uint8_t presc, uint8_t postsc, uint8_t clock_source,
         uint8_t reset_source, uint8_t mode, uint8_t presc_sync,
         uint8_t clock_edge, uint8_t start_sync, bool force_stop, 
-        bool force_start)
+        bool force_start, bool int_en)
 {
     // Temporary variables, save status of registers before executing
     int8_t temp_status = 0;
@@ -284,7 +282,7 @@ int8_t Timer_2_Configure ( uint8_t presc, uint8_t postsc, uint8_t clock_source,
         return 0;
     }
     // Try setting the T2HLT Register
-    if(-1 ==Timer_2_T2HLT_Set(presc_sync, clock_edge, start_sync, mode, false))
+    if(-1 == Timer_2_T2HLT_Set(presc_sync, clock_edge, start_sync, mode, false))
     {
         // Store the fault
         temp_status = -1;

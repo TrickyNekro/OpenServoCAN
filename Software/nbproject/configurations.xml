@@ -8,6 +8,10 @@
       <itemPath>Timer_2.h</itemPath>
       <itemPath>Timer_4.h</itemPath>
       <itemPath>Timer_6.h</itemPath>
+      <itemPath>CCP1_Module.h</itemPath>
+      <itemPath>CCP2_Module.h</itemPath>
+      <itemPath>CCP3_Module.h</itemPath>
+      <itemPath>CCP4_Module.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -22,6 +26,10 @@
       <itemPath>Timer_2.c</itemPath>
       <itemPath>Timer_4.c</itemPath>
       <itemPath>Timer_6.c</itemPath>
+      <itemPath>CCP1_Module.c</itemPath>
+      <itemPath>CCP2_Module.c</itemPath>
+      <itemPath>CCP3_Module.c</itemPath>
+      <itemPath>CCP4_Module.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -147,18 +147,18 @@ extern "C" {
 /* ************************************************************************** */
 /* ************************************************************************** */
  
-uint8_t     Timer_4_Value_Get       ( void );
-void        Timer_4_Value_Set ( uint8_t value );
-uint8_t     Timer_4_Period_Get ( void );
-void        Timer_4_Period_Set ( uint8_t value );
-void        Timer_4_Start ( void );
-void        Timer_4_Stop ( void );
-bool        Timer_4_Status_Get ( void );
-int8_t      Timer_4_Configure ( uint8_t presc, uint8_t postsc,
-                                uint8_t clock_source, uint8_t reset_source,
-                                uint8_t mode, uint8_t presc_sync,
-                                uint8_t clock_edge, uint8_t start_sync, 
-                                bool force_stop, bool force_start);
+uint8_t     Timer_4_Value_Get   ( void );
+void        Timer_4_Value_Set   ( uint8_t value );
+uint8_t     Timer_4_Period_Get  ( void );
+void        Timer_4_Period_Set  ( uint8_t value );
+void        Timer_4_Start       ( void );
+void        Timer_4_Stop        ( void );
+bool        Timer_4_Status_Get  ( void );
+int8_t      Timer_4_Configure   ( uint8_t presc, uint8_t postsc,
+                                  uint8_t clock_source, uint8_t reset_source,
+                                  uint8_t mode, uint8_t presc_sync,
+                                  uint8_t clock_edge, uint8_t start_sync, 
+                                  bool force_stop, bool force_start);
 
 
 #ifdef	__cplusplus
