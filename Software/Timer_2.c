@@ -326,3 +326,18 @@ int8_t Timer_2_Configure ( uint8_t presc, uint8_t postsc, uint8_t clock_source,
     // Return to the point of call
     return 1;
 }
+
+/* ************************************************************************** */
+/* ************************************************************************** */
+// Section: Interrupt Functions                                               */
+/* ************************************************************************** */
+/* ************************************************************************** */
+
+// Any Priority Interrupt Vector for Vectored Interrupts MVECEN = ON
+void __interrupt( irq( IRQ_TMR2 ) ) TMR2_Isr ( void )
+{
+    // Interrupt service routine for CCP1 Module
+    // First Reset the Flag
+    PIR4bits.TMR2IF = 0;
+}
+

@@ -361,3 +361,18 @@ int8_t CCP4_Module_Set_Value ( uint16_t value )
     // Fail-Safe Return
     return 0;
 }
+
+/* ************************************************************************** */
+/* ************************************************************************** */
+// Section: Interrupt Functions                                               */
+/* ************************************************************************** */
+/* ************************************************************************** */
+
+// Any Priority Interrupt Vector for Vectored Interrupts MVECEN = ON
+void __interrupt( irq( IRQ_CCP4 ) ) CCP4_Isr ( void )
+{
+    // Interrupt service routine for CCP1 Module
+    // First Reset the Flag
+    PIR9bits.CCP4IF = 0;
+}
+

@@ -373,6 +373,6 @@ void __interrupt( irq( IRQ_CCP1 ) ) CCP1_Isr ( void )
 {
     // Interrupt service routine for CCP1 Module
     // First Reset the Flag
-    PIR4bits_t.CLC1IF = 0;
+    PIR4bits.CCP1IF = 0;
 }
 

@@ -12,6 +12,9 @@
       <itemPath>CCP2_Module.h</itemPath>
       <itemPath>CCP3_Module.h</itemPath>
       <itemPath>CCP4_Module.h</itemPath>
+      <itemPath>CWG1_Module.h</itemPath>
+      <itemPath>CWG2_Module.h</itemPath>
+      <itemPath>CWG3_Module.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -30,6 +33,7 @@
       <itemPath>CCP2_Module.c</itemPath>
       <itemPath>CCP3_Module.c</itemPath>
       <itemPath>CCP4_Module.c</itemPath>
+      <itemPath>CWG1_Module.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -38,6 +42,9 @@
       <itemPath>MyConfig.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">

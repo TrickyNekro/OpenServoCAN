@@ -307,7 +307,7 @@ uint16_t CCP2_Module_Get_Value ( void )
 
 // Set the value of the comparator
 // Checks the mode comparator is in before loading.
-int8_t CCP1_Module_Set_Value ( uint16_t value )
+int8_t CCP2_Module_Set_Value ( uint16_t value )
 {
     // Temporary Variables
     uint8_t loader_low = 0, loader_high = 0;
@@ -361,3 +361,19 @@ int8_t CCP1_Module_Set_Value ( uint16_t value )
     // Fail-Safe Return
     return 0;
 }
+
+/* ************************************************************************** */
+/* ************************************************************************** */
+// Section: Interrupt Functions                                               */
+/* ************************************************************************** */
+/* ************************************************************************** */
+
+// Any Priority Interrupt Vector for Vectored Interrupts MVECEN = ON
+void __interrupt( irq( IRQ_CCP2 ) ) CCP2_Isr ( void )
+{
+    // Interrupt service routine for CCP1 Module
+    // First Reset the Flag
+    PIR8bits.CCP2IF = 0;
+}
+
+
