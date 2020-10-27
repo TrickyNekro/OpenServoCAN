@@ -1,4 +1,7 @@
 # OpenServoCAN
+
+<b> !!!!!!!!! Important Note !!!!!!!! Hardware v2 is coming, based on same microcontroller !!!!!! </b>
+
 An alternative to the boring control boards inside standard size hobby servos!
 
 As it is, the project is far from completion! I have the first boards already, but I do not
