@@ -30,3 +30,11 @@ totally up to you!
 
 4) Beefed up MOSFETs with individual MOSFET drivers, just to be able to push that switching 
 frequency to the right spot without worrying too much!
+
+
+<b> Important 2/11/2020 Update! </b>
+I have officially ended the fundraiser for this Project. True to my promise I would like to thank:
+Juri Ludwig, Anonymous (from eevblog ;-) ), Vagelis Logaras and Andreas Efthymiadis for their contributions.
+Their money have funded a couple mouser orders, the PCBs and some test servos. Which for me is more than
+enough that anyone would do for an open project with an open completion date! I can only promise that I
+will continue to deliver as much as real life allows me. Thank you! Let your names be immortalized here!
