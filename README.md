@@ -1,4 +1,5 @@
 # OpenServoCAN
+by El. Provatos
 
 <b> !!!!!!!!! Important Note !!!!!!!! Hardware v2 is coming, based on same microcontroller !!!!!! </b>
 
