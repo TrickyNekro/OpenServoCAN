@@ -72,3 +72,13 @@ Juri Ludwig, Anonymous (from eevblog ;-) ), Vagelis Logaras and Andreas Efthymia
 Their money have funded a couple mouser orders, the PCBs and some test servos. Which for me is more than
 enough that anyone would do for an open project with an open completion date! I can only promise that I
 will continue to deliver as much as real life allows me. Thank you! Let your names be immortalized here!
+
+
+
+#Donations!
+
+<b>No project on the internet would be great without donations! And Crypto is the future! </b>
+
+In Elon Musk We Trust Dogecoin (DOGE) : DQTDoTPzMencAXoiDVByQjifk2DryYTUPZ
+For the old timers Bitcoin (BTC)      : bc1qxqq8dz8md20nyglan9hmk88s894f8h0ywm0fq3
+For the Russian hackers Ethereum(ETH) : 0xAA05e9abD960005df318Ab82aE35A8c47e0096AB
