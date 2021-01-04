@@ -1,7 +1,7 @@
 # OpenServoCAN
 by El. Provatos
 
-<b> !!!!!!!!! Important Note !!!!!!!! Hardware v2 is coming, based on same microcontroller !!!!!! </b>
+<b> Currently two versions of the Hardware exist, development is going to continue on version 2</b>
 
 An alternative to the boring control boards inside standard size hobby servos!
 
