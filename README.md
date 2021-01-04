@@ -1,7 +1,7 @@
 # OpenServoCAN
 by El. Provatos
 
-<b> Currently two versions of the Hardware exist, development is going to continue on version 2</b>
+<b>!!! Currently two versions of the Hardware exist, development is going to continue on version 2 !!!</b>
 
 An alternative to the boring control boards inside standard size hobby servos!
 
