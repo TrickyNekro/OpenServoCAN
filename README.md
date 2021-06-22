@@ -2,7 +2,7 @@
 by El. Provatos
 
 <b>!!! Currently two versions of the Hardware exist, development is going to continue on version 2 !!!</b><br>
-<b>!!! Note: There is a design problem ( mechanical fitting ) with the power board, wait for update!!!</b>
+<b>!!! Note: There is a design problem ( mechanical fitting ) with the power board, wait for update !!!</b>
 
 An alternative to the boring control boards inside standard size hobby servos!
 
