@@ -1,5 +1,5 @@
 /* 
- * File:                configuration_pins.h
+ * File:                PWM5_Module.h
  * Author:              Provatos Eleftherios
  * Comments:            For use with PIC18F26K83 in OpenServoCAN project
  * Revision history:    V1.00
@@ -7,8 +7,8 @@
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef _CONFIGURATION_PINS_H
-#define	_CONFIGURATION_PINS_H
+#ifndef _PWM_MOD_5_H
+#define	_PWM_MOD_5_H
 
 /* ************************************************************************** */
 /* ************************************************************************** */
@@ -32,28 +32,30 @@ extern "C" {
 /* ************************************************************************** */
 /* ************************************************************************** */
     
-#define CONFIG_LOAD_ENCODER_FWR         0x01
-#define CONFIG_LOAD_ENCODER_RSV         0x02
-#define CONFIG_LOAD_ANALOG_A            0x11
-#define CONFIG_LOAD_ANALOG_B            0x12
+// PWM 5 Module Enable bit
+#define PWM5CON_EN_ON                               0x80
+#define PWM5CON_EN_OFF                              0x00
     
-#define PPS_PORT_X_PIN_0                0x00
-#define PPS_PORT_X_PIN_1                0x01
-#define PPS_PORT_X_PIN_2                0x02
-#define PPS_PORT_X_PIN_3                0x03
-#define PPS_PORT_X_PIN_4                0x04
-#define PPS_PORT_X_PIN_5                0x05
-#define PPS_PORT_X_PIN_6                0x06
-#define PPS_PORT_X_PIN_7                0x07
+// PWM 5 Module Enable bit Mask
+#define PWM5CON_EN_MASK                             0x80
     
-#define PPS_PORT_A_PIN_X                0x00
-#define PPS_PORT_B_PIN_X                0x08
-#define PPS_PORT_C_PIN_X                0x10
+// PWM 5 Polarity bit
+#define PWM5CON_POL_INV                             0x10
+#define PWM5CON_POL_NORM                            0x00
     
-#define PPS_PWM_8_TO_PIN                0x10
-#define PPS_PWM_7_TO_PIN                0x0F
-#define PPS_PWM_6_TO_PIN                0x0E
-#define PPS_PWM_5_TO_PIN                0x0D
+// PWM 5 Polarity bit Mask
+#define PWM5CON_POL_MASK                            0x10
+    
+// PWM 5 Output Read bit Mask
+#define PWM5COM_MASK_OUT                            0x20
+    
+// PWM 5 Timer Select bits
+#define CCPTMRS1_P5TSEL_TMR2                        0x01
+#define CCPTMRS1_P5TSEL_TMR4                        0x02
+#define CCPTMRS1_P5TSEL_TMR6                        0x03
+    
+// PWM 5 Timer Select bits Mask
+#define CCPTMRS1_P5TSEL_MASK                        0x03
     
 /* ************************************************************************** */
 /* ************************************************************************** */
@@ -67,12 +69,15 @@ extern "C" {
 /* ************************************************************************** */
 /* ************************************************************************** */
  
-void    PINS_Direction_Configure_Active     ( void );
-void    PINS_Direction_Configure_Sleep      ( void );
-void    PINS_Peripherals_Configure_Active   ( void );
-void    PINS_Peripherals_Configure_Sleep    ( void );
-uint8_t PINS_Get_Config_Load                ( void );
-void    PINS_Set_Config_Load                ( uint8_t config );
+void    PWM_5_Set_Enable        ( bool en );
+bool    PWM_5_Get_Enable        ( void );
+void    PWM_5_Set_Polarity      ( bool inv );
+void    PWM_5_Invert_Polarity   ( void ); 
+bool    PWM_5_Get_Polarity      ( void );
+uint8_t PWM_5_Get_Timer_Source  ( void );
+int8_t  PWM_5_Set_Output_No_Cap ( uint16_t pwm_val );
+int8_t  PWM_5_Set_Output_Capped ( uint16_t pwm_val );
+int8_t  PWM_5_Initialize        ( uint8_t timer, bool out_inv, bool start );
 
 #ifdef	__cplusplus
 }

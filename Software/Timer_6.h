@@ -133,7 +133,12 @@ extern "C" {
 #define T6HLT_MODE_MS_START_RISING                  0x11
 #define T6HLT_MODE_MS_START_FALLING                 0x12
 #define T6HLT_MODE_MS_START_CHANGE                  0x13
-    
+
+// Generic Timer 6 Related Values
+#define TMR6_PERIOD_MAX                             0xFF
+#define TMR6_PERIOD_MIN                             0x00
+#define TMR6_PERIOD_MID                             0x80
+#define TMR6_PERIOD_USER                            0xF0
     
 /* ************************************************************************** */
 /* ************************************************************************** */
@@ -151,14 +156,20 @@ uint8_t     Timer_6_Value_Get   ( void );
 void        Timer_6_Value_Set   ( uint8_t value );
 uint8_t     Timer_6_Period_Get  ( void );
 void        Timer_6_Period_Set  ( uint8_t value );
+void        Timer_6_Interr_ON   ( void );
+void        Timer_6_Interr_OFF  ( void );
+void        Timer_6_Interr_High ( void );
+void        Timer_6_Interr_Low  ( void );
 void        Timer_6_Start       ( void );
 void        Timer_6_Stop        ( void );
 bool        Timer_6_Status_Get  ( void );
 int8_t      Timer_6_Configure   ( uint8_t presc, uint8_t postsc,
-                                  uint8_t clock_source, uint8_t reset_source,
-                                  uint8_t mode, uint8_t presc_sync,
-                                  uint8_t clock_edge, uint8_t start_sync, 
-                                  bool force_stop, bool force_start);
+                                  uint8_t clock_source, uint8_t period, 
+                                  uint8_t reset_source, uint8_t mode,
+                                  uint8_t presc_sync, uint8_t clock_edge, 
+                                  uint8_t start_sync, bool force_stop,
+                                  bool force_start, bool int_en, 
+                                  bool int_high );
 
 
 #ifdef	__cplusplus

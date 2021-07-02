@@ -66,27 +66,27 @@ void PINS_Direction_Configure_Active ( void )
 {
     // Load default configuration
     // PORTA - Inputs either Encoder or Potentiometer
-    TRISA    =  0xFF;
+    TRISA    =  0x1B;
     // A digital device is assumed being connected
     // All inputs digital
     ANSELA  =   0x00;
     // Activate weak pull-ups on input to stop 
     // port from collecting noise 
-    WPUA    =   0xFF;
+    WPUA    =   0x1B;
     
     // PORTB - Indicators - CAN TX / STBY - USART - PROG_PORT
-    TRISB    =  0x80;
+    TRISB    =  0xF0;
     // All pins are digital
     ANSELB  =   0x00;
     // Weak Pull - Up for the USART RXD
-    WPUB    =   0x80;
+    WPUB    =   0xF0;
     
     // PORTC - CAN RX / NSIL - PWR_EN - ADC V / I - PWM A / B
-    TRISC    =  0x94;
+    TRISC    =  0x3C;
     // ADC Inputs are Analog
-    ANSELC  =   0x14;
+    ANSELC  =   0x00;
     // All pins are driving or driven, no need for pull ups
-    WPUC    =   0x00;
+    WPUC    =   0x38;
     
     // Return to program
     return;
@@ -107,10 +107,12 @@ void PINS_Peripherals_Configure_Active ( void )
 {
     // First execute the sequence to unlock the PPS Module
     PPS_UNLOCK();
-    // Connect PWM3 to LED2, LED - LINK - GREEN
-    CCP3PPS = (PPS_PORT_B_PIN_X | PPS_PORT_X_PIN_3);
-    // Connect PWM4 to LED1, LED - POWER - RED
-    CCP4PPS = (PPS_PORT_B_PIN_X | PPS_PORT_X_PIN_4);
+    // Connect PWM 8 to RA.7, LED - GREEN
+    RA6PPS = PPS_PWM_8_TO_PIN;
+    // Connect PWM 7 to RA.6, LED - BLUE
+    RA7PPS = PPS_PWM_6_TO_PIN;
+    // Connect PWM 6 to RA.5, LED - RED
+    RA5PPS = PPS_PWM_5_TO_PIN;
     // Lastly execute the sequence to lock the PPS Module
     PPS_LOCK();
     // Return to program

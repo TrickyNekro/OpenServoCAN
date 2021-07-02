@@ -30,37 +30,35 @@
 
 // Set the mode of operation in the T6HLT Register
 static int8_t Timer_6_T6HLT_Set (uint8_t pres_sync, uint8_t pres_edge,
-                            uint8_t start_sync, uint8_t mode, bool up_live )
-{
+                            uint8_t start_sync, uint8_t mode, bool up_live ) {
     // Check to see if the Timer 6 is running. To avoid erratic behavior 
     // always and only update the registers when Timer 6 is NOT running.
-    if((T6CONbits.ON) && (!up_live))
-    {
+    if ( ( T6CONbits.ON ) && ( !up_live ) ) {
         // Return with a No Change Flag
         return 0;
     }
     // Check for illegal values
     // Illegal values of mode
-    if ((0x10 == mode) || (0x14 == mode) || (0x15 == mode) || (0x18 <= mode))
-    {
+    if ( ( 0x10 == mode ) || ( 0x14 == mode ) || 
+         ( 0x15 == mode ) || ( 0x18 <= mode ) ) {
         // Return a fault code
         return -1;
     }
     // Illegal values of T6HLT.PSYNC
-    if((T6HLT_PSYNC_ON != pres_sync) || (T6HLT_PSYNC_OFF != pres_sync))
-    {
+    if ( ( T6HLT_PSYNC_ON != pres_sync ) && 
+         ( T6HLT_PSYNC_OFF != pres_sync ) ) {
         // Return a fault code
         return -1;
     }
     // Illegal values of T6HLT.CPOL
-    if((T6HLT_CKPOL_RISING != pres_edge) || (T6HLT_CKPOL_FALLING != pres_edge))
-    {
+    if ( ( T6HLT_CKPOL_RISING != pres_edge ) && 
+         ( T6HLT_CKPOL_FALLING != pres_edge ) ) {
         // Return a fault code
         return -1;
     }
     // Illegal values of T6HLT.CKSYNC
-    if((T6HLT_CKSYNC_ON != start_sync) || (T6HLT_CKSYNC_OFF != start_sync))
-    {
+    if ( ( T6HLT_CKSYNC_ON != start_sync ) && 
+         ( T6HLT_CKSYNC_OFF != start_sync ) ) {
         // Return a fault code
         return -1;
     }
@@ -75,26 +73,22 @@ static int8_t Timer_6_T6HLT_Set (uint8_t pres_sync, uint8_t pres_edge,
 }
 
 // Return the value of Timer 6 T6HLT Register
-static uint8_t Timer_6_T6HLT_Get ( void )
-{
+static uint8_t Timer_6_T6HLT_Get ( void ) {
     // Return the value
     return T6HLT;
 }
 
 // Select the clock source for Timer 6
-static int8_t Timer_6_T6CLK_Set ( uint8_t clock_source, bool up_live )
-{
+static int8_t Timer_6_T6CLK_Set ( uint8_t clock_source, bool up_live ) {
     // Check to see if the Timer 6 is running. To avoid erratic behavior 
     // always and only update the registers when Timer 6 is NOT running.
-    if((T6CONbits.ON) && (!up_live))
-    {
+    if ( ( T6CONbits.ON ) && ( !up_live ) ) {
         // Return with a No Change Flag
         return 0;
     }
     // Check for illegal values
     // Illegal values of T6CLK.CS
-    if(0x0F <= clock_source)
-    {
+    if ( 0x0F <= clock_source ) {
         // Return a fault code
         return -1;
     }
@@ -105,27 +99,23 @@ static int8_t Timer_6_T6CLK_Set ( uint8_t clock_source, bool up_live )
 }
 
 // Return the value of Timer 6 T6CLK Register
-static uint8_t Timer_6_T6CLK_Get ( void )
-{
+static uint8_t Timer_6_T6CLK_Get ( void ) {
     // Return the value
     return T6CLK;
 }
 
 // Select the Timer 6 Reset Signal origin
-static int8_t Timer_6_T6RST_Set ( uint8_t res_source, bool up_live )
-{
+static int8_t Timer_6_T6RST_Set ( uint8_t res_source, bool up_live ) {
     // Check to see if the Timer 6 is running. To avoid erratic behavior 
     // always and only update the registers when Timer 6 is NOT running.
-    if((T6CONbits.ON) && (!up_live))
-    {
+    if ( ( T6CONbits.ON ) && ( !up_live ) ) {
         // Return with a No Change Flag
         return 0;
     }
     // Check for illegal values
     // Illegal values of T6RST.RSEL
-    if((0x03 == res_source) || (0x0C == res_source) || (0x0D == res_source) ||
-            0x19 <= res_source)
-    {
+    if ( ( 0x03 == res_source ) || ( 0x0C == res_source ) || 
+         ( 0x0D == res_source ) || ( 0x19 <= res_source ) ) {
         // Return a fault code
         return -1;
     }
@@ -136,32 +126,27 @@ static int8_t Timer_6_T6RST_Set ( uint8_t res_source, bool up_live )
 }
 
 // Return the value of Timer 6 T6RST Register
-static uint8_t Timer_6_T6RST_Get ( void )
-{
+static uint8_t Timer_6_T6RST_Get ( void ) {
     // Return the value 
     return T6RST;
 }
 
 // Configure the Pre - Scaler and Post - Scaler setting of Timer 6
-static int8_t Timer_6_T6CON_Set ( uint8_t presc, uint8_t postsc, bool up_live)
-{
+static int8_t Timer_6_T6CON_Set ( uint8_t presc, uint8_t postsc, bool up_live ){
     // Check to see if the Timer 6 is running. To avoid erratic behavior 
     // always and only update the registers when Timer 6 is NOT running.
-    if((T6CONbits.ON) && (!up_live))
-    {
+    if ( ( T6CONbits.ON ) && ( !up_live ) ) {
         // Return with a No Change Flag
         return 0;
     }
     // Check for illegal values
     // Illegal values of T6CON.CKPS
-    if(0x8F & presc)
-    {
+    if ( 0x8F & presc ) {
         // Return with a fault code
         return -1;
     }
     // Illegal values of T6CON.OUTPS
-    if(0xF0 & postsc)
-    {
+    if ( 0xF0 & postsc ) {
         // Return with a fault code
         return -1;
     }
@@ -176,11 +161,39 @@ static int8_t Timer_6_T6CON_Set ( uint8_t presc, uint8_t postsc, bool up_live)
 }
 
 // Return the value of Timer 6 T6CON Register
-static uint8_t Timer_6_T6CON_Get ( void )
-{
+static uint8_t Timer_6_T6CON_Get ( void ) {
     // Return the value
     return T6CON;
 }
+
+// Returns the Enable status of the Interrupt
+static bool Timer_6_Get_Inter_Status ( void ) {
+    // Returns the enable status of Interrupts
+    return PIE9bits.TMR6IE;
+}
+
+// Sets the Enable status for the Interrupt
+static void Timer_6_Set_Inter_Status ( bool int_en ) {
+    // Sets the enable bit of the Interrupts
+    PIE9bits.TMR6IE = int_en;
+    // Return to the point of call
+    return;
+}
+
+// Returns the priority of the Interrupt
+static bool Timer_6_Get_Inter_Priori ( void ) {
+    // Returns the priority set bit of the Interrupt
+    return IPR9bits.TMR6IP;
+}
+
+// Sets the Enable status for the Interrupt
+static void Timer_6_Set_Inter_Priori ( bool int_pr ) {
+    // Sets the enable bit of the Interrupts
+    IPR9bits.TMR6IP = int_pr;
+    // Return to the point of call
+    return;
+}
+
 /* ************************************************************************** */
 /* ************************************************************************** */
 /* Section: Interface Functions                                               */
@@ -188,15 +201,13 @@ static uint8_t Timer_6_T6CON_Get ( void )
 /* ************************************************************************** */
 
 // Return the current value of Timer 6
-uint8_t Timer_6_Value_Get ( void )
-{
+uint8_t Timer_6_Value_Get ( void ) {
     // Return the value
     return T6TMR;
 }
 
 // Set the value of Timer 6
-void Timer_6_Value_Set ( uint8_t value )
-{
+void Timer_6_Value_Set ( uint8_t value ) {
     // Set the value of Timer 6
     T6TMR = value;
     // Return to the point of call
@@ -204,25 +215,55 @@ void Timer_6_Value_Set ( uint8_t value )
 }
 
 // Return the current value of the Timer 6 Period Register
-uint8_t Timer_6_Period_Get ( void )
-{
+uint8_t Timer_6_Period_Get ( void ) {
     // Return the value
     return T6PR;
 }
 
 // Set the value of Timer 6 Period
-void Timer_6_Period_Set ( uint8_t value )
-{
+void Timer_6_Period_Set ( uint8_t value ) {
     // Set the value of Timer 6 Period
     T6PR = value;
     // Return to the point of call
     return;
 }
 
+// Enable the Interrupt
+void Timer_6_Interr_ON ( void ) {
+    // Enables the Interrupts for Timer 2
+    PIE9bits.TMR6IE = 1;
+    // Return to the point of call
+    return;
+}
+
+// Disable the Interrupt
+void Timer_6_Interr_OFF ( void ) {
+    // Disables the Interrupts for Timer 2
+    PIE9bits.TMR6IE = 0;
+    // Return to the point of call
+    return;
+}
+
+// Enable the Interrupt
+void Timer_6_Interr_High ( void ) {
+    // Set Timer 2 Interrupt Priority High
+    IPR9bits.TMR6IP = 0;
+    // Return to the point of call
+    return;
+}
+
+// Enable the Interrupt
+void Timer_6_Interr_Low ( void ) {
+    // Set Timer 2 Interrupt Priority Low
+    IPR9bits.TMR6IP = 1;
+    // Return to the point of call
+    return;
+}
+
+
 // Start Timer 6. Actual start of counting 
 // depends on mode of operation
-void Timer_6_Start ( void )
-{
+void Timer_6_Start ( void ) {
     // Set the ON bit of Timer 6 Control Register
     T6CONbits.ON = 1;
     // Return to the point of call
@@ -230,8 +271,7 @@ void Timer_6_Start ( void )
 }
 
 // Stop Timer 6. Effect immediate
-void Timer_6_Stop ( void )
-{
+void Timer_6_Stop ( void ) {
     // Reset the ON bit of Timer 6 Control Register
     T6CONbits.ON = 0;
     // Return to the point of call
@@ -239,15 +279,13 @@ void Timer_6_Stop ( void )
 }
 
 // Return if the Timer 6 is Running or Not
-bool Timer_6_Status_Get ( void )
-{
-    if(T6CONbits.ON)
-    {
+bool Timer_6_Status_Get ( void ) {
+    // Read Enable Status of Timer 6
+    if ( T6CONbits.ON ) {
         // Return that Timer 6 is running
         return true;
     }
-    else
-    {
+    else {
         // Return that Timer 6 is stopped
         return false;
     }
@@ -261,69 +299,72 @@ bool Timer_6_Status_Get ( void )
 // Restarting Timer 6 after a successful configuration can done by setting
 // force_start flag to true, else Timer 6 has to be started manually.
 int8_t Timer_6_Configure ( uint8_t presc, uint8_t postsc, uint8_t clock_source,
-        uint8_t reset_source, uint8_t mode, uint8_t presc_sync,
-        uint8_t clock_edge, uint8_t start_sync, bool force_stop, 
-        bool force_start)
-{
+                        uint8_t period, uint8_t reset_source, uint8_t mode,
+                        uint8_t presc_sync, uint8_t clock_edge,
+                        uint8_t start_sync, bool force_stop, 
+                        bool force_start, bool int_en, bool int_pr ) {
     // Temporary variables, save status of registers before executing
-    int8_t temp_status = 0;
-    uint8_t temp_T6HLT = Timer_6_T6HLT_Get();
-    uint8_t temp_T6RST = Timer_6_T6RST_Get();
-    uint8_t temp_T6CLK = Timer_6_T6CLK_Get();
-    uint8_t temp_T6CON = Timer_6_T6CON_Get();
+    int8_t  temp_status = 0;
+    uint8_t temp_T6HLT = Timer_6_T6HLT_Get ( );
+    uint8_t temp_T6RST = Timer_6_T6RST_Get ( );
+    uint8_t temp_T6CLK = Timer_6_T6CLK_Get ( );
+    uint8_t temp_T6CON = Timer_6_T6CON_Get ( );
+    bool    temp_st_IE = Timer_6_Get_Inter_Status ( );
+    bool    temp_st_IP = Timer_6_Get_Inter_Priori ( );
     // If the force_stop is set to true then stop the Timer before updating
-    if(force_stop)
-    {
-        Timer_6_Stop();
+    if ( force_stop ) {
+        Timer_6_Stop ( );
     }
     // Check to see if the Timer 6 is running. To avoid erratic behavior 
     // always and only update the registers when Timer 6 is NOT running.
-    if(T6CONbits.ON)
-    {
+    if ( T6CONbits.ON ) {
         // Return with a No Change Flag
         return 0;
     }
     // Try setting the T6HLT Register
-    if(-1 == Timer_6_T6HLT_Set(presc_sync, clock_edge, start_sync, mode, false))
-    {
+    if ( -1 == Timer_6_T6HLT_Set ( presc_sync, clock_edge, start_sync, 
+                                    mode, false ) ) {
         // Store the fault
         temp_status = -1;
     }
     // Try setting the T6RST Register
-    if(-1 == Timer_6_T6RST_Set(reset_source, false))
-    {
+    if ( -1 == Timer_6_T6RST_Set ( reset_source, false ) ) {
         // Store the fault
         temp_status = -1;
     }
     // Try updating the T6CLK Register
-    if(-1 == Timer_6_T6CLK_Set(clock_source, false))
-    {
+    if ( -1 == Timer_6_T6CLK_Set ( clock_source, false ) ) {
         // Store the fault
         temp_status = -1;
     }
     // Try updating the T6CON Register
-    if(-1 == Timer_6_T6CON_Set(presc, postsc, false))
-    {
+    if ( -1 == Timer_6_T6CON_Set ( presc, postsc, false ) ) {
         // Store the fault
         temp_status = -1;
     }
     // If a fault was detected then restore the values of the registers
     // and return to the point of call with a fault code
-    if(0 > temp_status)
-    {
+    if ( 0 > temp_status ) {
         // Store the recalled values
         T6HLT = temp_T6HLT;
         T6RST = temp_T6RST;
         T6CLK = temp_T6CLK;
         T6CON = temp_T6CON;
+        // Store the old Interrupt settings
+        Timer_6_Set_Inter_Status ( temp_st_IE );
+        Timer_6_Set_Inter_Priori ( temp_st_IP );
         // Return with a fault code
         return temp_status;
     }
+    // Set the input interrupt settings
+    Timer_6_Set_Inter_Status ( int_en );
+    Timer_6_Set_Inter_Priori ( int_pr );
+    // Set the Timer Period
+    Timer_6_Period_Set ( period );
     // Start Timer 6 again if requested
-    if(force_start)
-    {
+    if ( force_start ) {
         // Start Timer 6
-        Timer_6_Start();
+        Timer_6_Start ( );
     }
     // Return to the point of call
     return 1;
@@ -336,7 +377,7 @@ int8_t Timer_6_Configure ( uint8_t presc, uint8_t postsc, uint8_t clock_source,
 /* ************************************************************************** */
 
 // Any Priority Interrupt Vector for Vectored Interrupts MVECEN = ON
-void __interrupt( irq( IRQ_TMR6 ) ) TMR6_Isr ( void )
+void __interrupt ( irq ( IRQ_TMR6 ) ) TMR6_Isr ( void )
 {
     // Interrupt service routine for CCP1 Module
     // First Reset the Flag
