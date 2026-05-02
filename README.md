@@ -79,8 +79,4 @@ will continue to deliver as much as real life allows me. Thank you! Let your nam
 
 # Donations!
 
-<b>No project on the internet would be great without donations! And Crypto is the future! </b>
-
-In Elon Musk We Trust Dogecoin (DOGE) : DQTDoTPzMencAXoiDVByQjifk2DryYTUPZ <br>
-For the old timers Bitcoin (BTC)      : bc1qxqq8dz8md20nyglan9hmk88s894f8h0ywm0fq3 <br>
-For the Russian hackers Ethereum(ETH) : 0xAA05e9abD960005df318Ab82aE35A8c47e0096AB <br>
+<b>No need :) </b>
